@@ -5,4 +5,4 @@ def capture_icmp(packet):
     if ICMP in packet and packet[IP].ttl == 1:
         packet.show()
 
-#sniff(prn=capture_icmp)
+sniff(prn=capture_icmp)
